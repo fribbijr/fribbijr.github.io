@@ -11,7 +11,19 @@
     <link rel="stylesheet" href="lokaverkefni.css">
 </head>
   <body>
+    
     <header>
+        <picture>
+      <!-- Hér koma 4 stærðir af forsíðumynd sem vafrinn velur eftir breidd skjásins -->
+      <picture>
+        <source media="(min-width:80rem)" srcset="baggalutur (2).jpeg">
+        <source media="(min-width:60rem)" srcset="baggalutur (2).jpeg">
+        <source media="(min-width:48rem)" srcset="baggalutur (2).jpeg"> 
+        <source media="(min-width:37.5rem)" srcset="baggalutur (2).jpeg">
+        <source media="(min-width:20rem)" srcset="baggalutur (2).jpeg">
+        <img src="baggalutur (2).jpeg" alt="img tagið verður að vera með til vara(fallback)" style="width: 100%;">
+      </picture>
+    </picture>
       <h1>Baggalútur</h1>
       <nav>
         <a href="#Bragi">Bragi</a>
@@ -20,17 +32,7 @@
         <a href="Kalli">Kalli</a>
       </nav>
     </header>
-    <picture>
-      <!-- Hér koma 4 stærðir af forsíðumynd sem vafrinn velur eftir breidd skjásins -->
-      <!--<picture>
-        <source media="(min-width:80rem)" srcset="baggalutur (2).jpeg">
-        <source media="(min-width:60rem)" srcset="baggalutur (2).jpeg">
-        <source media="(min-width:48rem)" srcset="baggalutur (2).jpeg"> 
-        <source media="(min-width:37.5rem)" srcset="baggalutur (2).jpeg">
-        <source media="(min-width:20rem)" srcset="baggalutur (2).jpeg">
-        <img src="baggalutur (2).jpeg" alt="img tagið verður að vera með til vara(fallback)" style="width: 100%;">
-      </picture>
-    </picture>-->
+    
     
     <main>
         <article>
@@ -74,6 +76,7 @@
         </article>
             <div class="spotify">
                 <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/3XukFNF4RBUOLAEiTIbMhV?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" ></iframe>
+                <figcaption class="text-center">Hljóðdæmi</figcaption>
             </div>
         
 
@@ -90,30 +93,9 @@
             </blockquote>
         </aside>
     </main>
-        <div class="myndir">
-          Hér koma 3 myndir í röð, 2 eða 3 raðir. Allar myndir í sömu stærð (500px x 500px)
-          <figure>
-            <img src="Bragi.png">
-            <figcaption>Bragi Valdimar Skúlason</figcaption>
-          </figure>
-          <figure>
-            <img src="gummi_kj.jpeg">
-            <figcaption>Gummi KJ</figcaption>
-          </figure>
-          <figure>
-            <img src="gummi_pals.png">
-            <figcaption>Gummi Páls</figcaption>
-          </figure>
-          <figure>
-            <img src="kalli.jpeg">
-            <figcaption>Kalli</figcaption>
-          </figure>
-          
-        </div>
-      
-    </div> bakgrunnur <endar-->
+        
     <footer>
-        <div class="footer"></div>
+        <div class="footer">
             <nav>
                 <h4>Hafðu samband</h4>
                 <dl>
@@ -162,6 +144,7 @@
                     <a href="https://learn.shayhowe.com/" target="_blank">Learn HTML & CSS</a>  
                 </li>
             </nav>
+        </div>
     </footer>
     <p class="copy">&copy; 2025 Friðbjörn Víðir</p>
   </body>

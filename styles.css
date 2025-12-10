@@ -20,15 +20,19 @@ article{
 }
 
 header{
-    background-image: url("baggalutur\ \(2\).jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     padding-top: 30px;
 }
 
+header picture img {
+    width: 100%;
+    display: block;
+}
+
 header h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
     text-shadow: 0 -2px 12px rgb(255, 0, 0);
     padding: 30px;
     text-align: center;
@@ -116,6 +120,18 @@ footer a{
     font-size: large;
 }
 
+@media screen and (min-width: 5rem){
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 37.5rem){
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
 @media screen and (min-width:48em) {
     .footer {
         grid-template-columns: 1fr 1fr 1fr;
@@ -128,6 +144,9 @@ footer a{
 @media screen and (min-width:60em) {
     article{
         grid-template-columns: 1fr 1fr;
+    }
+    header h1 {
+        font-size: 5rem;
     }
 }
 @media screen and (min-width:80em) {
